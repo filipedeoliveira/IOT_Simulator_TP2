@@ -3,19 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package iot_simulator_tp2;
+package as_tp2;
 
 /**
  *
- * @author Filipe Oliveira
+ * @author Stéphane
  */
-public class IOT_Simulator_TP2 {
-
-    /**
-     * @param args the command line arguments
-     */
+public class MAIN {
     public static void main(String[] args) {
-        System.out.println("ola");
+        // TODO code application logic here
     }
-    
 }
