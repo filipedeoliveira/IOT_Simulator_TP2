@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class ControladorAtuadores {
 
-    public List lastTemp = new ArrayList<>();
+    public static List lastTemp = new ArrayList<Float>();
 
     public static void executaComandosTemperatura() throws InterruptedException {
         float temp = 20.0f;
@@ -38,6 +38,7 @@ public class ControladorAtuadores {
                         sleep(1000);
                     }
                     System.out.println("Modo segurança ligado temperatura a descer");
+                    lastTemp.add(temp);
                 }
             } else {
 
