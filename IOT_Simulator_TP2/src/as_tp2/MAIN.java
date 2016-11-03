@@ -12,5 +12,6 @@ package as_tp2;
 public class MAIN {
     public static void main(String[] args) {
         // TODO code application logic here
+        ControladorAtuadores.executaComandosTemperatura();
     }
 }
