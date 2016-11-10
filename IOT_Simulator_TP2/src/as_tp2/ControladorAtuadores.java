@@ -1,13 +1,9 @@
 package as_tp2;
 
-import static java.lang.Thread.sleep;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class ControladorAtuadores {
-
-    public static List lastTemp = new ArrayList<Float>();
+/*
+    public static List lastTemp1 = new ArrayList<Float>();
 
     public static void executaComandosTemperatura() throws InterruptedException {
         float temp = 20.0f;
@@ -39,7 +35,21 @@ public class ControladorAtuadores {
                     }
                     System.out.println("Modo segurança ligado temperatura a descer");
                     lastTemp.add(temp);
+                    //ligar ar condicionado
                 }
+                else if (escolha == 'S' || escolha == 's'){
+                    lastTemp.add(temp);
+                    System.out.println("Modo segurança ligado temperatura a descer");
+                    ArCondicionado ac = new ArCondicionado();
+                    LigarArCondicionadoCommand on = new LigarArCondicionadoCommand(ac);
+                    EstoreElectrico el = new EstoreElectrico();
+                    FecharEstoreCommand fec = new FecharEstoreCommand(el);
+                    Invoker in = new Invoker();
+                    in.takeOrder(on);
+                    in.takeOrder(fec);
+                    in.placeOrders();
+                }
+                
             } else {
 
             }
@@ -50,5 +60,5 @@ public class ControladorAtuadores {
         }
 
     }
-
+*/
 }

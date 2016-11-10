@@ -3,29 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AR_CONDICIONADO;
-
+package AQUECIMENTO;
 import as_tp2.Command;
-import as_tp2.Temperatura;
-
 /**
  *
  * @author Stéphane
  */
-public class LigarArCondicionadoCommand implements Command{
-     ArCondicionado ac;
+public class LigarAquecimentoCommand implements Command{
+    Aquecimento aq;
     
-    public LigarArCondicionadoCommand(ArCondicionado ac){
-        this.ac=ac;
+    public LigarAquecimentoCommand(Aquecimento aq ){
+        this.aq=aq;
     }
     
     @Override
     public void execute() {
-        ac.open();
+        aq.open();
     }
 
     @Override
     public void undo() {
-        ac.open();
+        aq.open();
     }
 }

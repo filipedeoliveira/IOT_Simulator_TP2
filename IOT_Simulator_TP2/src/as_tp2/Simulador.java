@@ -10,8 +10,9 @@ import java.util.Random;
 public class Simulador {
 
     public static float getTemperatura() {
-        float minT = -20.0f;
-        float maxT = 60.0f;
+        //alterar os limites pra valores mais normais pra uma casa
+        float minT = -5.0f;
+        float maxT = 33.0f;
         Random randT = new Random();
 
         float temp;
