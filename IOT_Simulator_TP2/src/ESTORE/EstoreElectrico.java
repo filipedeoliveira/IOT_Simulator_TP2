@@ -25,12 +25,12 @@ public class EstoreElectrico {
     
     public void open(){
         this.estado = ABERTO;
-        System.out.println("Estore aberto");
+        System.out.println(">Estore aberto");
     }
     
     public void close(){
          this.estado = FECHADO;
-        System.out.println("Estore aberto");
+        System.out.println(">Estore fechado");
     }
     
 }

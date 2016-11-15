@@ -25,12 +25,12 @@ public class ArCondicionado {
     
     public void open(){
         this.estado = LIGADO;
-        System.out.println("Ar Condicionado Ligado");
+        System.out.println(">Ar Condicionado Ligado");
     }
     
     public void close(){
          this.estado = DESLIGADO;
-        System.out.println("Ar Condicionado Desligado");
+        System.out.println(">Ar Condicionado Desligado");
     }
     
 }

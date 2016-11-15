@@ -25,12 +25,12 @@ public class LampadaInteligente {
     
     public void open(){
         this.estado = LIGADO;
-        System.out.println("Lâmpada Ligada");
+        System.out.println(">Lâmpada Ligada");
     }
     
     public void close(){
          this.estado = DESLIGADO;
-        System.out.println("Lâmpada Desligada");
+        System.out.println(">Lâmpada Desligada");
     }
     
 }

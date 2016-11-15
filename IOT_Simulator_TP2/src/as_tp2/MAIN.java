@@ -5,7 +5,9 @@
  */
 package as_tp2;
 
+import static as_tp2.Simulador.lastTemperature;
 import java.io.IOException;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -16,11 +18,21 @@ import java.util.logging.Logger;
  */
 public class MAIN {
     public static void main(String[] args) throws IOException, InterruptedException{
-        System.out.println("#########################");    
-        System.out.println("########SmartHome########");
-        System.out.println("#########################"); 
-
-            ControloAtuadoresTemperatura.executaComandosTempInicial();
-       
+        System.out.println("###########################################################################");    
+        System.out.println("#################################SmartHome#################################");
+        System.out.println("###########################################################################"); 
+        //HorarioAtuadores.smartHome();
+        ConcreteSubject remote = new ConcreteSubject();
+            int i=0;
+                 
+            remote.registerObserver(new ControladorAtuador(i));
+            
+            
+            new Thread( new Runnable(){
+            public void run() {
+            while (true) {
+                remote.notifyObservers();
+        }}}).start();
+        
     }
 }

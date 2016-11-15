@@ -25,12 +25,12 @@ public class Aquecimento {
     
     public void open(){
         this.estado = LIGADO;
-        System.out.println("Aquecimento Ligado");
+        System.out.println(">Aquecimento Ligado");
     }
     
     public void close(){
          this.estado = DESLIGADO;
-        System.out.println("Aquecimento Desligado");
+        System.out.println(">Aquecimento Desligado");
     }
     
 }

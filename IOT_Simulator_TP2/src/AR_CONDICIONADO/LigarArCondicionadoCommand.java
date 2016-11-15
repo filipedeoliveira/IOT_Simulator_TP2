@@ -6,7 +6,6 @@
 package AR_CONDICIONADO;
 
 import as_tp2.Command;
-import as_tp2.Temperatura;
 
 /**
  *
